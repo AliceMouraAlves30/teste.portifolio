@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 280px;
+  background: rgba(0,0,0,0.4);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.sidebar img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.sidebar h1 {
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.role {
+  color: #6dd5fa;
+  margin: 10px 0 30px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+/* CONTENT */
+.content {
+  flex: 1;
+  padding: 60px;
+}
+
+.content section {
+  margin-bottom: 80px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  padding: 8px 15px;
+  background: #6dd5fa;
+  color: #000;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: rgba(0,0,0,0.4);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* Este estilo afeta todas as imagens dentro dos cards de projeto */
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card a {
+  display: block;
+  margin-top: 10px;
+  color: #6dd5fa;
+  text-decoration: none;
+}
+
+.project-card span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* SECTION IMAGES (APLICA-SE ÀS IMAGENS DAS SEÇÕES ABOUT E SKILLS) */
+.section-image {
+    max-width: 100%; 
+    height: auto;    
+    border-radius: 15px; 
+    margin-bottom: 30px; 
+    display: block; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .content {
+    padding: 30px;
+  }
+}
